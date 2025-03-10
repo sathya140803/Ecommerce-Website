@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container for centering the form */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1f242d;
+}
+
+/* Form styling */
+.container form {
+    width: 700px;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+}
+
+/* Row layout for labels and inputs */
+form .row {
+    display: flex;
+    gap: 15px;
+}
+
+/* Equal width for labels and inputs */
+.row .column {
+    flex: 1;
+}
+
+/* Title styling */
+.title {
+    font-size: 20px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* Input box styling */
+.input-box {
+    margin: 15px 0;
+}
+
+.input-box span {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 14px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* Align labels and inputs horizontally */
+.flex-container {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+/* Equal width for input boxes within flex-container */
+.flex-container .input-box {
+    flex: 1;
+}
+
+/* Image styling for card icons */
+.input-box img {
+    height: 29px;
+    margin-top: 5px;
+}
+
+/* Button styling */
+form .btn {
+    width: 100%;
+    padding: 12px;
+    background: #8175d3;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}

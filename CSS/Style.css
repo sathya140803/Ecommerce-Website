@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Navbar text color (links and other text) */
+.navbar .nav-link,
+.navbar-brand {
+  color: rgb(255, 255, 255);
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Spacing between navbar items */
+.nav-item {
+  margin: 0 10px;
+}
+/* Enlarging the search box */
+form .form-control {
+  width: 500px;
+}
+
+/* Spacing for search bar */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* Navbar background color */
+.navbar {
+  background-color: lightblue;
+}
+.logo {
+  width: 2%;
+  height: 2%;
+}
+.background-container {
+  background-image: url("image/god2.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  height: 100vh;
+}
+.custom-card {
+  width: 22rem; /* Custom width */
+  padding: 10px;
+  background-color: gray;
+  /* Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Soft shadow */
+}
+
+.custom-card img {
+  height: 350px; /* Image height */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 10px; /* Image corners */
+}
+
+/* Content container styles */
+.carousel-caption-left {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%); /* Centers content vertically */
+  z-index: 2; /* Content appears above the overlay */
+  color: white; /* Text color for visibility */
+}
+
+.carousel-caption-left h1 {
+  font-size: 3rem; /* Adjust as needed */
+  margin-bottom: 1rem;
+}
+
+.carousel-caption-left p {
+  font-size: 1.2rem; /* Adjust as needed */
+  margin-bottom: 1.5rem;
+}
+
+.carousel-caption-left .btn {
+  padding: 0.75rem 1.5rem; /* Adjust button padding */
+  font-size: 1rem; /* Adjust button text size */
+}

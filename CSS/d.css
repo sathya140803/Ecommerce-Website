@@ -1,0 +1,55 @@
+
+
+.card {
+    margin-bottom: 10px;
+}
+
+.card-img-top {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+.card-body {
+    text-align: left;
+}
+
+.description-text {
+    font-size: 14px;
+    color: #f80000;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.row img {
+    margin-top: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.custom-hr {
+    border: 0;
+    height: 2px; /* Adjust the height/thickness of the line */
+    background-color: #ffffff; /* Adjust the color of the line */
+    width: 100%; /* Adjust the width of the line */
+    margin: 20px auto; /* Center the line and adjust the spacing */
+}
+.custom-img {
+    width: 100%; /* Make the image take up the full width of the column */
+   /* Maintain the aspect ratio */
+    height: 300px; /* Set a maximum height for the images */
+     /* Ensure the images cover the designated area without stretching */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    margin-bottom: 20px; /* Add space below the images */
+}

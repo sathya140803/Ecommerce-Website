@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+    background: url('../background.png') no-repeat center center fixed; /* Set your background image here */
+    background-size: cover; /* Ensures the image covers the entire background */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Translucent white background */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.about-box {
+    display: flex;
+    flex-direction: column;
+    background: #636363;
+        border-radius: 10px;
+    padding: 20px;
+}
+
+.about-left, .about-right {
+    padding: 20px;
+}
+
+.about-left {
+    flex: 1;
+    background-color: #777777;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.about-right {
+    flex: 1;
+    background-color: #141414;
+    color: #fff;
+    border-radius: 10px;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.container p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+ul li strong {
+    font-weight: 600;
+}
+
+.about-right p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .about-box {
+        flex-direction: row;
+    }
+    
+    .about-left, .about-right {
+        margin: 0;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-box {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}

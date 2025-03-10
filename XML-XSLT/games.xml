@@ -1,0 +1,17 @@
+<games>
+    <game>
+        <image src="/image/fortnite.jpeg"/>
+        <title>Fortnite</title>
+        <description>.</description>
+    </game>
+    <game>
+        <image src="/image/callof.jpg"/>
+        <title>Call of Duty</title>
+        <description>.</description>
+    </game>
+    <game>
+        <image src="/image/gta6.png"/>
+        <title>GTA 6</title>
+        <description>.</description>
+    </game>
+</games>

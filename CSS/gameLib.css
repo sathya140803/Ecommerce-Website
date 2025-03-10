@@ -1,0 +1,248 @@
+
+:root{
+    --main-background-color:#111111;
+    --main-foreground-color:#333333;
+    --main-subforeground-color:#555555;
+    --main-text-color:#ffffff;
+    --main-highlighted-color:#cccccc;
+    --main-button-textcolor: #ffffff;
+}
+
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--main-background-color);
+}
+
+.backToTop{
+    z-index: 2;
+}
+
+.backToTopButton{
+    background-color: var(--main-subforeground-color);
+    color: var(--main-button-textcolor);
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    text-align: center;
+    padding: 5px;
+    margin: 0px;
+
+    &:hover{
+        color: var(--main-highlighted-color);
+    }
+}
+
+.editButton{
+    font-size: medium;
+    margin-right: 10px;
+    height: 100%;
+    background-color: var(--main-subforeground-color);
+    color: var(--main-button-textcolor);
+    border: none;
+    cursor: pointer;
+
+    &:hover{
+        color: var(--main-highlighted-color);
+    }
+}
+
+.libIdentifier{
+
+    & h2{
+        text-decoration: underline;
+        color: var(--main-text-color);
+        margin-left: 10px;
+        width: calc(100% - 10px);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+
+.mainList{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.sortContainer{
+    background-color: var(--main-foreground-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 20px;
+}
+.staticSort{
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--main-text-color);
+}
+.sortDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sortDiv button{
+    line-height: 40px;
+    text-align: center;
+    width: fit-content;
+    font-size: large;
+    margin: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 20px;
+    border-style: none;
+    cursor: pointer;
+    background-color: var(--main-subforeground-color);
+    color: var(--main-button-textcolor);
+    
+    &:hover{
+        color: var(--main-highlighted-color);
+    };
+}
+.curSort{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.curSortChild{
+    display: flex;
+    & h2{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+.sortValId{
+    color: var(--main-text-color);
+}
+.sortVal{
+    margin-left: 5px;
+    color: var(--main-highlighted-color);
+}
+
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.gameDetails{
+    opacity: 75%;
+    background-color: var(--main-foreground-color);
+    width: 100%;
+    border-radius: 20px;
+}
+.sideCont{
+    display: flex;      
+    flex-wrap: nowrap;
+    
+}
+.gameImg{
+    width: 240px;
+    height: 320px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.gameImg img{
+    width: 240px;
+    height: 320px;
+    border-radius: 20px;
+}
+.gameDesc{
+    margin-left: 20px;
+    margin-right: 10px;
+
+    & h2{
+        text-align: left;
+        color: var(--main-text-color);
+        font-family: Arial, Helvetica, sans-serif;
+    };
+    & h1{
+        text-align: left;
+        color: var(--main-highlighted-color);        
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+.gameCategory{
+    margin-left: 20px;
+    background-color: var(--main-subforeground-color);
+    width: fit-content;
+    border-radius: 20px;
+}
+.gameCategory h4{
+    padding: 5px 5px;
+    color: var(--main-button-textcolor);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.gameButtons{
+    display: flex;
+    justify-content: center;
+    color: var(--main-button-textcolor);
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.gameButtons button{
+    margin-left: 20px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--main-subforeground-color);
+    color: var(--main-button-textcolor);
+    font-size: large;
+    cursor: pointer;
+
+    &:hover{
+        color: var(--main-highlighted-color);
+    };
+}
+
+.noResults{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--main-highlighted-color);
+}
+
+
+@media screen and (max-width: 800px) {
+    
+    .editButton{
+        margin-right: 10px;
+        height: 100%;
+    }
+    
+
+    .mainList{
+        width: calc(100% - 20px);
+        margin-left: 0px;
+        padding: 0px 10px;
+    }
+    .sortContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sortDiv button{
+        line-height: 40px;
+        text-align: center;
+    }
+    .gameDetails{
+        width: 100%;
+    }
+    .sideCont{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .gameImg{
+        margin-left: 0px;
+    }
+    .gameButtons{
+        width: 50%;
+        margin-left: 25%;
+        display: flex;
+        justify-content: center;
+        height: 50px;
+    }
+}

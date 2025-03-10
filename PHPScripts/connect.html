@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NinjaGames - Contact Us</title>
+    <link rel="stylesheet" href="../CSS/contactstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Connect With Us</h1>
+        <p>We would love to respond to your queries and help you succeed.<br>Feel free to get in touch with us.</p>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Send your request</h3>
+                <form id="contactForm">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input type="text" name="phone" placeholder="+230 5999 9999" required>
+                        </div>
+                    </div>
+                    
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="johndoe@gmail.com" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Subject</label>
+                            <input type="text" name="subject" placeholder="Title" required>
+                        </div>
+                    </div>
+                    
+                    <label>Message</label>
+                    <textarea name="message" rows="8" placeholder="Your Message" required></textarea>
+                    
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+            <div class="contact-right">
+                <h3>Reach Us</h3>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td><span style="margin-left: -15px;">ninjagames@gmail.com</span></td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td><span style="margin-left: -15px;"></span>+230 5911 0505</span></td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td><span>Level 7, New Academic Complex Building, University of Mauritius,  Réduit 80837, Mauritius</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup" style = "color: black;"></div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the default way
+
+            let formData = new FormData(this);
+
+            fetch('submit_contact.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                let popup = document.getElementById('popup');
+                popup.textContent = data.message;
+                popup.style.display = 'block';
+                if (data.success) {
+                    // Clear form fields
+                    this.reset();
+                }
+                setTimeout(() => {
+                    popup.style.display = 'none';
+                }, 3000); // Hide the popup after 3 seconds
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    </script>
+</body>
+</html>

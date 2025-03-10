@@ -1,0 +1,37 @@
+.footer {
+  background-color: black;
+  color: #f1f1f1;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.footer p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer div {
+  margin-top: 5px;
+}
+
+.footer i {
+  color: #ffffff;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.footer i:hover {
+  color: #ff6600;
+}

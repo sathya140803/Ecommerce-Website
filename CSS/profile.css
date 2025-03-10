@@ -1,0 +1,59 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.userProfile{
+    height: 210px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.userData{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.userAvatar{
+    width: 120px;
+    height: 120px;
+    margin-top: 40px;
+    border-radius: 120px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & .initial{
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+    };
+}
+.editDiv{
+    display: flex;
+    justify-content: right;
+    height: 45px;
+}
+
+
+.userAccData{
+    margin-left: 10px;
+    margin-top: 50px;
+    & h2{
+        color: var(--main-text-color);
+        font-family: Arial, Helvetica, sans-serif;
+    };
+    & h4{
+        margin-top: -20px;
+        color: var(--main-text-color);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .userProfile{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+}

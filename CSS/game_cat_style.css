@@ -1,0 +1,44 @@
+.center-text {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 10vh; 
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.game-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.game-image {
+    width: 200px; 
+    height: 250px; 
+    object-fit: cover; 
+    border: 5px solid white; 
+    border-radius: 8px; 
+    margin-bottom: 15px; 
+    transition: transform 0.3s; 
+}
+
+.game-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.game-price {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+.btn {
+    margin-top: 5px;
+}
+
