@@ -8,7 +8,8 @@
             <head>
                 <title>Game Cards</title>
                 <!-- Linking External CSS -->
-                <link rel="stylesheet" type="text/css" href="/XML/styles.css"/>
+                <link rel="stylesheet" type="text/css" href="/XML/SStyles.css"/>
+
             </head>
             <body>
                 <div class="container">
