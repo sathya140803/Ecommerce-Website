@@ -1,0 +1,96 @@
+/* Wrapper for the trending section */
+.trending-section-wrapper {
+  position: relative; /* Required for positioning the triangles */
+  width: 100%;
+  overflow: hidden; /* Ensures triangles don't overflow */
+}
+
+/* Larger triangle on the left */
+.trending-section-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -200px; /* Start off-screen */
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 150px solid transparent; /* Larger triangle */
+  border-bottom: 150px solid transparent; /* Larger triangle */
+  border-left: 150px solid #061006; /* Forest Green (Triangle color) */
+  z-index: 1; /* Ensure it's above the background */
+  transition: left 1s ease-out; /* Smooth transition */
+}
+
+/* Larger triangle on the right */
+.trending-section-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -200px; /* Start off-screen */
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 150px solid transparent; /* Larger triangle */
+  border-bottom: 150px solid transparent; /* Larger triangle */
+  border-right: 150px solid #010701; /* Forest Green (Triangle color) */
+  z-index: 1; /* Ensure it's above the background */
+  transition: right 1s ease-out; /* Smooth transition */
+}
+
+/* Add smaller triangles on top of the larger ones */
+.trending-section-wrapper .triangle-small-left,
+.trending-section-wrapper .triangle-small-right,
+.trending-section-wrapper .triangle-smaller-left,
+.trending-section-wrapper .triangle-smaller-right {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-top: 100px solid transparent; /* Smaller triangle size */
+  border-bottom: 100px solid transparent; /* Smaller triangle size */
+  z-index: 2; /* Ensure it's above the larger triangles */
+  transition: left 1s ease-out, right 1s ease-out; /* Smooth transition */
+}
+
+/* Position smaller triangle on the left */
+.trending-section-wrapper .triangle-small-left {
+  left: -100px; /* Start off-screen */
+  border-left: 100px solid hsl(119, 90%, 54%); /* Medium Sea Green (Triangle color) */
+}
+
+/* Position smaller triangle on the right */
+.trending-section-wrapper .triangle-small-right {
+  right: -100px; /* Start off-screen */
+  border-right: 100px solid #05ff33; /* Medium Sea Green (Triangle color) */
+}
+
+/* Position even smaller triangles on the left */
+.trending-section-wrapper .triangle-smaller-left {
+  left: -50px; /* Start off-screen */
+  border-left: 50px solid #20f320; /* Light Green (Triangle color) */
+}
+
+/* Position even smaller triangles on the right */
+.trending-section-wrapper .triangle-smaller-right {
+  right: -50px; /* Start off-screen */
+  border-right: 50px solid #30f830; /* Light Green (Triangle color) */
+}
+
+/* Class to trigger the animation for larger triangles */
+.trending-section-wrapper.animate::before {
+  left: 0; /* Move into the screen */
+}
+
+.trending-section-wrapper.animate::after {
+  right: 0; /* Move into the screen */
+}
+
+/* Class to trigger the animation for smaller triangles */
+.trending-section-wrapper.animate .triangle-small-left {
+  left: 0; /* Move into the screen */
+}
+
+.trending-section-wrapper.animate .triangle-small-right {
+  right: 0; /* Move into the screen */
+}

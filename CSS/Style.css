@@ -35,31 +35,11 @@ form {
 }
 /* Navbar background color */
 .navbar {
-  background-color: lightblue;
+  background-color: black;
 }
 .logo {
   width: 2%;
   height: 2%;
-}
-.background-container {
-  background-image: url("image/god2.jpg");
-  background-size: cover;
-  background-position: center;
-  padding: 50px 0;
-  height: 100vh;
-}
-.custom-card {
-  width: 22rem; /* Custom width */
-  padding: 10px;
-  background-color: gray;
-  /* Rounded corners */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Soft shadow */
-}
-
-.custom-card img {
-  height: 350px; /* Image height */
-  object-fit: cover; /* Maintain aspect ratio */
-  border-radius: 10px; /* Image corners */
 }
 
 /* Content container styles */

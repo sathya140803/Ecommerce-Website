@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<games2>
+    <game2>
+        <title>Super Mario Bros</title>
+        <image src="/admin_area/uploads/Elden_Ring_Box_art.jpg" />
+        <price>39.99</price>
+    </game2>
+    <game2>
+        <title>The Legend of Zelda</title>
+        <image src="/admin_area/uploads/Elden_Ring_Box_art.jpg" />
+        <price>59.99</price>
+    </game2>
+    <game2>
+        <title>Animal Crossing</title>
+        <image src="/admin_area/uploads/callof.jpg" />
+        <price>49.99</price>
+    </game2>
+    <game2>
+        <title>Mario Kart</title>
+        <image src="/admin_area/uploads/Elden_Ring_Box_art.jpg" />
+        <price>44.99</price>
+    </game2>
+</games2>
