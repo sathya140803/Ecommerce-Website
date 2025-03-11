@@ -3,7 +3,7 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <!-- Template to match the root 'games' element -->
-    <xsl:template match="/games">
+    <xsl:template match="/games2">
         <html>
             <head>
                 <title>Game Cards</title>
@@ -12,16 +12,17 @@
             </head>
             <body>
                 <div class="container">
-                    <xsl:apply-templates select="game"/>
+                    <xsl:apply-templates select="game2"/>
                 </div>
             </body>
         </html>
     </xsl:template>
 
     <!-- Template to match each 'game' element -->
-    <xsl:template match="game">
+    <xsl:template match="game2">
         <div class="card">
-            <img class="card-img" alt="">
+            <!-- Game Image -->
+            <img>
                 <xsl:attribute name="src">
                     <xsl:value-of select="image/@src"/>
                 </xsl:attribute>
@@ -29,14 +30,22 @@
                     <xsl:value-of select="title"/>
                 </xsl:attribute>
             </img>
+
             <div class="card-body">
+                <!-- Game Title -->
                 <h5 class="card-title">
                     <xsl:value-of select="title"/>
                 </h5>
-                <!-- Removed the buttons with title text -->
+
+                <!-- Game Price -->
+                <p class="card-price">
+                    $                    <xsl:value-of select="price"/>
+                </p>
+
+                <!-- Buttons -->
                 <div class="btn-container">
-                    <a href="#" class="btn cart"></a>                    <!-- Empty buttons -->
-                    <a href="#" class="btn explore"></a>
+                    <a href="#" class="btn cart">Add to Cart</a>
+                    <a href="#" class="btn explore">Explore</a>
                 </div>
             </div>
         </div>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<games>
+    <game>
+        <name>Call of Duty</name>
+        <price>$59.99</price>
+        <image>/image/callof.jpg</image>
+    </game>
+    <game>
+        <name>FIFA 24</name>
+        <price>$49.99</price>
+        <image>/image/callof.jpg</image>
+    </game>
+    <game>
+        <name>Cyberpunk 2077</name>
+        <price>$39.99</price>
+        <image>/image/callof.jpg</image>
+    </game>
+    <game>
+        <name>God of War</name>
+        <price>$69.99</price>
+        <image>/image/callof.jpg</image>
+    </game>
+    <game>
+        <name>Assassin's Creed</name>
+        <price>$59.99</price>
+        <image>/image/callof.jpg</image>
+    </game>
+    <game>
+        <name>Red Dead Redemption</name>
+        <price>$59.99</price>
+        <image>/image/callof.jpg</image>
+    </game>
+    <game>
+        <name>The Witcher 3</name>
+        <price>$49.99</price>
+        <image>/image/callof.jpg</image>
+    </game>
+    <game>
+        <name>Battlefield V</name>
+        <price>$39.99</price>
+        <image>/image/callof.jpg</image>
+    </game>
+</games>

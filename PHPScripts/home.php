@@ -1,11 +1,10 @@
 
 <?php
-// Database connection
 require("dbInit.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Shop</title>
@@ -13,12 +12,13 @@ require("dbInit.php");
     <link rel="stylesheet" href="../CSS/Style.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/popup.css">
+    <link rel="stylesheet" href="../CSS/triangle.css">
+    <link rel="stylesheet" href="../CSS/banner.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <!-- Bootstrap CSS link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  
 </head>
 <body>
 <!-- Navbar -->
@@ -95,23 +95,76 @@ require("dbInit.php");
     align-items: center;
     justify-content: center;
     padding: 20px;">
-        <?php include('../PHPxml/display-games.php'); ?>
+        <?php include('../PHPxml/games1.php'); ?>
 </div>
-<br><br>
 
-<?php require('../PHPxml/index.php') ?>
-<br><br>
+
+<div class="trending-section-wrapper" style="background-image: url('/image/ruby.jpg'); background-size: cover; background-position: center; padding: 20px;">
+  
+    <h3 style="  
+        text-align: center;   
+        font-size: 2.5em;   
+        color: #ffffff;   
+        background: linear-gradient(to right, rgb(29, 209, 29), rgba(0, 0, 0, 1)); /* Forest Green to Black */  
+        padding: 20px;   
+        border-radius: 10px;   
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+        margin: 20px auto;   
+        max-width: 600px;  
+    ">  
+        Top Trending Games  
+    </h3>  
+
+    <!-- Triangles -->  
+    <div class="triangle-small-left"></div>  
+    <div class="triangle-small-right"></div>  
+
+    <?php include('../PHPxml/games2.php'); ?>
+</div>
+
+<div class="image-containerr">
+  <div class="card-containerr">
+    <div class="top-row">
+      <div class="cardr-wrapper">
+        <h3 class="card-title" style="color:white">Destiny</h3>
+        <div class="cardr card1"></div>
+      </div>
+      <div class="cardr-wrapper">
+        <h3 class="card-title" style="color:white">Solo</h3>
+        <div class="cardr card2"></div>
+      </div>
+    </div>
+    <div class="bottom-row">
+      <div class="cardr-wrapper">
+        <h3 class="card-title" style="color:white">Dragon Ball</h3>
+        <div class="cardr card3"></div>
+      </div>
+      <div class="cardr-wrapper">
+        <h3 class="card-title" style="color:white">Mario</h3>
+        <div class="cardr card4"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="trending-section-wrapper" style="background-image: url('/image/battle.jpg'); background-size: cover; background-position: center; padding: 20px;">
+    <h3 style="  
+        text-align: center;   
+        font-size: 2.5em;   
+        color: #ffffff;   
+        background: linear-gradient(to right, rgb(29, 209, 29), rgb(43, 14, 207)); /* Forest Green to Black */  
+        padding: 20px;   
+        border-radius: 10px;   
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+        margin: 20px auto;   
+        max-width: 600px;  
+    ">  
+        Bestsellers
+    </h3>  
+    <?php include('../PHPxml/games3.php'); ?>
+</div>
+
 <?php require('carousel.php') ?>
-
-
-
-
-
-
-
-
-
-
 
 <footer class="footer">
     <div class="container">
@@ -125,6 +178,7 @@ require("dbInit.php");
 </footer>
 
 <script src = "../JAVAScripts/userCheck.js"></script>
+<script src = "../JAVAScripts/triangle.js"></script>
 
 <!-- Bootstrap JS Bundle (includes Popper) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

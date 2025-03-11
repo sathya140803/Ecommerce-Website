@@ -1,10 +1,10 @@
 <?php
 // Load the XML and XSLT files
 $xml = new DOMDocument;
-$xml->load('../XML-XSLT/games2.xml'); // Replace with the actual path to your XML file
+$xml->load('../XML/games2.xml'); // Replace with the actual path to your XML file
 
 $xsl = new DOMDocument;
-$xsl->load('../XML-XSLT/gameCards.xsl'); // Replace with the actual path to your XSLT file
+$xsl->load('../XML/games2.xsl'); // Replace with the actual path to your XSLT file
 
 // Set up the XSLT processor
 $proc = new XSLTProcessor;
