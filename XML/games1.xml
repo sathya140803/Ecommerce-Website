@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <games1>
     <game1>
-        <image src="/image/fortnite.jpeg"/>
+        <image src="/admin_area/uploads/fortnite.jpeg"/>
         <title>Fortnite</title>
         <price>29.99</price>
     </game1>

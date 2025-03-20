@@ -1,16 +1,13 @@
 <?php
-// Load the XML data from the games.xml file
+
 $xml = new DOMDocument;
-$xml->load('../XML/games1.xml'); // Adjust the path if necessary
+$xml->load('../XML/games1.xml'); 
 
-// Load the XSLT stylesheet from the game-card.xsl file
 $xsl = new DOMDocument;
-$xsl->load('../XML/games1.xsl'); // Adjust the path if necessary
+$xsl->load('../XML/games1.xsl'); 
 
-// Create a new XSLTProcessor and import the XSLT stylesheet
 $proc = new XSLTProcessor;
-$proc->importStyleSheet($xsl);  // Attach the XSLT stylesheet
+$proc->importStyleSheet($xsl);  
 
-// Apply the XSLT transformation to the XML and output the result
 echo $proc->transformToXML($xml);
 ?>

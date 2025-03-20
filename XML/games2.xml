@@ -2,22 +2,22 @@
 <games2>
     <game2>
         <title>Super Mario Bros</title>
-        <image src="/admin_area/uploads/Elden_Ring_Box_art.jpg" />
+        <image src="https://m.media-amazon.com/images/I/61RH+Kfo2YL._AC_UF894,1000_QL80_.jpg" />
         <price>39.99</price>
     </game2>
     <game2>
         <title>The Legend of Zelda</title>
-        <image src="/admin_area/uploads/Elden_Ring_Box_art.jpg" />
+        <image src="https://m.media-amazon.com/images/I/61gEETe5-wL.jpg" />
         <price>59.99</price>
     </game2>
     <game2>
         <title>Animal Crossing</title>
-        <image src="/admin_area/uploads/callof.jpg" />
+        <image src="https://m.media-amazon.com/images/I/71AEUAVSDyL._AC_SL1000_.jpg" />
         <price>49.99</price>
     </game2>
     <game2>
         <title>Mario Kart</title>
-        <image src="/admin_area/uploads/Elden_Ring_Box_art.jpg" />
+        <image src="https://cdn.europosters.eu/image/750/posters/mario-kart-8-deluxe-i50037.jpg" />
         <price>44.99</price>
     </game2>
 </games2>
