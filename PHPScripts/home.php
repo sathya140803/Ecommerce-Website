@@ -14,6 +14,7 @@ require("dbInit.php");
     <link rel="stylesheet" href="../CSS/popup.css">
     <link rel="stylesheet" href="../CSS/triangle.css">
     <link rel="stylesheet" href="../CSS/banner.css">
+    <link rel="stylesheet" href="../CSS/search.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <!-- Bootstrap CSS link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -22,68 +23,69 @@ require("dbInit.php");
 </head>
 <body>
 <!-- Navbar -->
+<!-- Navbar -->
 <div class="container-fluid p-0">
     <nav class="navbar navbar-expand-lg"> 
-      <div class="container-fluid">
-        <img src="../logo.jpeg" alt="" class="logo">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center">
-            <!-- Navbar items -->
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.php" style="color: white;">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Categories
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="puzzel-games.php">Puzzle game</a></li>
-                <li><a class="dropdown-item" href="action-game.php">Action game</a></li>
-                <li><a class="dropdown-item" href="sport-game.php">Sports game</a></li>
-                <li><a class="dropdown-item" href="strategy-game.php">Strategy game</a></li>
-              </ul>
-            </li>
+        <div class="container-fluid">
+            <img src="../logo.jpeg" alt="" class="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center">
+                    <!-- Navbar items -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.php" style="color: white;">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="puzzel-games.php">Puzzle game</a></li>
+                            <li><a class="dropdown-item" href="action-game.php">Action game</a></li>
+                            <li><a class="dropdown-item" href="sport-game.php">Sports game</a></li>
+                            <li><a class="dropdown-item" href="strategy-game.php">Strategy game</a></li>
+                        </ul>
+                    </li>
 
-            <form class="d-flex mx-4" role="search" method="GET" action="search_results.php">
-               <input class="form-control me-2" type="search" 
-                   placeholder="Search" aria-label="Search" name="search_data">
-                <input type="submit" value="Search" class="btn btn-outline-light" name="search_game_data">
-             </form>
-            
+                    <!-- Search Form -->
+                    <form class="d-flex mx-4" role="search" method="GET" action="search_results.php">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search_data">
+                        <input type="submit" value="Search" class="btn btn-outline-light" name="search_game_data">
+                    </form>
 
-             <li class="nav-item">
-             <span id="cart-count" class="d-flex" style="margin-left: 60px; position:absolute; color:white">0</span>
-                <a class="nav-link" href="cart.php">
-                    <i class="fas fa-shopping-cart"></i>
-                    Cart
-                </a>
-             </li>
-            <li class="nav-item">
-              <p id = "loginNotifier" style = "color:white; margin:0;">
-                Logged in as:
-              </p>
-            </li>
-
-            <li class = "nav-item">
-              <a class="nav-link" href="#" id = "userProfile" style = "margin:0">
-              </a>
-            </li>
-
-            <li class = "nav-item" id = "lgout">
-              <a class="nav-link" href="logout.php" id = "userProfile">
-                Log Out
-              </a>
-            </li>
-          </ul>
+                    <!-- Cart and User Profile -->
+                    <li class="nav-item">
+                        <span id="cart-count" class="d-flex" style="margin-left: 60px; position:absolute; color:white">0</span>
+                        <a class="nav-link" href="cart.php">
+                            <i class="fas fa-shopping-cart"></i>
+                            Cart
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <p id="loginNotifier" style="color:white; margin:0;">
+                            Logged in as:
+                        </p>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="userProfile" style="margin:0"></a>
+                    </li>
+                    <li class="nav-item" id="lgout">
+                        <a class="nav-link" href="logout.php" id="userProfile">
+                            Log Out
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
 </div>
+
+<!-- Search Results Container -->
+<div id="search-results-container"></div>
 <div id = "homePopup" class = "popup"></div>
 
 <div style="
@@ -147,7 +149,7 @@ require("dbInit.php");
   </div>
 </div>
 
-<div class="trending-section-wrapper" style="background-image: url('/image/battle.jpg'); background-size: cover; background-position: center; padding: 20px;">
+<div class="trending-section-wrapper" style="background-image: url('/image/spot.jpg'); background-size: cover; background-position: center; padding: 20px;">
     <h3 style="  
         text-align: center;   
         font-size: 2.5em;   
@@ -179,6 +181,8 @@ require("dbInit.php");
 
 <script src = "../JAVAScripts/userCheck.js"></script>
 <script src = "../JAVAScripts/triangle.js"></script>
+<script src = "../JAVAScripts/search.js"></script>
+
 
 <!-- Bootstrap JS Bundle (includes Popper) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
