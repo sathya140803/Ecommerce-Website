@@ -1,6 +1,4 @@
 
-
-
 <?php
 // Load XML data
 $xml = new DOMDocument();
