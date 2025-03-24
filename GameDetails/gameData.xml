@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game>
+  <game_id>4</game_id>
+  <game_title>Fortnite</game_title>
+  <game_description>Fortnite is an online video game and game platform developed by Epic Games and released in 2017. It is available in six distinct game mode versions that otherwise share the same general gameplay and game engine.</game_description>
+  <long_description>Save the World and Battle Royale were released in 2017 as early access titles, while Creative was released on December 6, 2018. While the Save the World and Creative versions have been successful for Epic Games, Fortnite Battle Royale in particular became an overwhelming success and a cultural phenomenon, drawing more than 125 million players in less than a year, earning hundreds of millions of dollars per month. Fortnite as a whole generated $9 billion in gross revenue up until December 2019, and it has been listed among the greatest games of all time.</long_description>
+  <game_keywords>construction,Fortnite</game_keywords>
+  <category_id>Action</category_id>
+  <game_price>30</game_price>
+  <date>2024-08-30 09:01:19</date>
+  <Status/>
+  <rating>4.5</rating>
+  <size>150</size>
+  <company>Epic games</company>
+  <age_restriction>14+</age_restriction>
+  <platforms>PS5</platforms>
+  <images>
+    <image1>uploads/fortnite.jpeg</image1>
+    <image2>uploads/well-damour-fortnite-videoSixteenByNineJumbo1600.png</image2>
+    <image3>uploads/105082519-25311264_1731947360215914_950200727891670717_o.jpg</image3>
+    <image4>uploads/00XpAmYpxd6wvLkvIO672zY-5.webp</image4>
+  </images>
+</game>
