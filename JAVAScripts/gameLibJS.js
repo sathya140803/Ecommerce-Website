@@ -4,9 +4,8 @@ function recieveTab(a) {
     
         
     $.ajax({
-        url: "getFuncs.php",
+        url: "getgamesws.php",
         data: { 
-            "type": "GetUserLib",
             "sortval": a
         },
         type: "GET",

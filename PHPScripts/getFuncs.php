@@ -2,7 +2,7 @@
 session_start();
     require("dbInit.php");
     if(isset($_GET["type"])){
-        if($_GET["type"] == "GetUserLib"){
+        /*if($_GET["type"] == "GetUserLib"){
             $sortVal = strval($_GET["sortval"]);
 
            $sql = "SELECT g.game_id, g.game_title, g.category_id, g.game_description, game_image1
@@ -30,7 +30,7 @@ session_start();
                 echo "NoResult";
             }
             
-        }
+        }*/
         if($_GET["type"] == "GetUserInfo"){
             if(isset($_SESSION["userid"])){
                 $sql = "SELECT * FROM users where userID = ". $_SESSION["userid"];
