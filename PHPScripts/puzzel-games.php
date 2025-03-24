@@ -133,7 +133,7 @@ $resultNinthToFourteenth = mysqli_query($conn, $sqlNinthToFourteenth);
                     <img src="../admin_area/'.$rowGame['game_image1'].'" alt="Game Image" class="game-image">
                     <p class="game-price"><strong>Price:</strong> $'.$rowGame['game_price'].'</p>
                     <a class="btn btn-primary mb-2" onclick="addToCart(' . $rowGame['game_id'] . '); return false;">Add to cart</a>
-                    <a href="game_details.php?id='.$rowGame['game_id'].'" class="btn btn-secondary mx-2 mb-2">Explore</a>
+                    <a href="CheckGame.php?id='.$rowGame['game_id'].'" class="btn btn-secondary mx-2 mb-2">Explore</a>
                 </div>';
             }
         } else {

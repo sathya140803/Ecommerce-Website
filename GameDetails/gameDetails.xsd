@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <xs:element name="game">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="game_id" type="xs:integer"/>
+                <xs:element name="game_title" type="xs:string"/>
+                <xs:element name="game_description" type="xs:string"/>
+                <xs:element name="long_description" type="xs:string"/>
+                <xs:element name="game_keywords" type="xs:string"/>
+                <xs:element name="category_id" type="xs:string"/>
+                 <xs:element name="game_price" type="xs:string"/>
+                <xs:element name="date" type="xs:string"/>
+                <xs:element name="Status" type="xs:string"/>
+                <xs:element name="rating" type="xs:decimal"/>   
+                <xs:element name="size" type="xs:string"/>
+                <xs:element name="company" type="xs:string"/>
+                <xs:element name="age_restriction" type="xs:string"/>
+                <xs:element name="platforms" type="xs:string"/>
+                <xs:element name="images">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="image1" type="xs:string"/>
+                            <xs:element name="image2" type="xs:string"/>
+                            <xs:element name="image3" type="xs:string"/>
+                            <xs:element name="image4" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="error" type="xs:string"/>
+    
+</xs:schema>

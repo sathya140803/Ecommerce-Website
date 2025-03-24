@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game>
+  <game_id>27</game_id>
+  <game_title>WWE 2K24</game_title>
+  <game_description>Step into the ring and become a WWE superstar in WWE 2K24. Create your own wrestler and compete in various matches. Select the main events like Summerslam and Wrestlemania to become the undisputed WWE champion</game_description>
+  <long_description> WWE 2K24 offers a thrilling wrestling experience with a massive roster of WWE superstars, customizable characters, and intense matches. Create your own wrestler and compete in various match types, including singles, tag team, and ladder matches. Enjoy authentic WWE storylines and relive iconic moments. The game also features a deep career mode where you can rise through the ranks and become a WWE champion. You can also create your own storylines and matches, and even customise the WWE Universe itself.The "Backstage Brawl" mode was further updated to completely leave the arena to have a Parking Lot Brawl, plus the addition of 25 new and unique locations.</long_description>
+  <game_keywords>WWE,sport</game_keywords>
+  <category_id>Sport</category_id>
+  <game_price>59.99</game_price>
+  <date>2024-09-05 21:20:14</date>
+  <Status/>
+  <rating>3.0</rating>
+  <size>70 GB</size>
+  <company>2K Sports</company>
+  <age_restriction>13+</age_restriction>
+  <platforms>PC</platforms>
+  <images>
+    <image1>uploads/wwe2k24 Cover.png</image1>
+    <image2>uploads/wwe2k24img1.png</image2>
+    <image3>uploads/wwe2k24img2.png</image3>
+    <image4>uploads/wwe2k24img3.png</image4>
+  </images>
+</game>
