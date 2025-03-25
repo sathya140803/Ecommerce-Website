@@ -9,33 +9,47 @@
 <body>
 <div id="form">
         <h1>Login</h1>
-        <form name="form" action="loginLogic.php" onsubmit="return isvalid()" method="POST">
-     
+        <form name="form" >
             <input type="text" id="user" name="user" placeholder=  "Username">
             <input type="password" id="pass" name="pass"  placeholder=  "Password">
-            <input type ="submit" id="login_btn" value="Submit" name ="submit"/>
+            <input type ="button" id="login_btn" value="Submit" name ="submit" onclick="ajaxPost()"/>
             <a href="register.php" id="register-link">Don't have an account? Click here</a></br>
             <a href="home.php" id="home-link">Back</a>  <!--home link-->
         </form>
     </div>
     <script>
-        function isvalid(){
+        function ajaxPost(){
             var user = document.form.user.value;
             var pass = document.form.pass.value;
-            if(user.length==""&&pass.length==""){
-                alert("Username and Password field is empty!");
-                return false;
+            var validationPattern = /^([a-zA-Z0-9]){1,10}$/;
+
+            if(!(validationPattern.test(user) || validationPattern.test(pass))){
+                alert("Invalid Details. Try again.");
+                return;
             }
-            if(user.length==""){
-                alert("Username is empty!");
-                return false;
-                } 
-                if(pass.length==""){
-                alert("Password is empty!");
-                return false;
+            
+            var req = new XMLHttpRequest();
+            req.open("POST","loginLogic.php",true);
+            req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+            req.onreadystatechange = function(){
+                if(req.readyState == 4){
+                    if(req.status == 200){
+                        var val = req.responseXML.getElementsByTagName("exist")[0].firstChild.nodeValue;
+                        if(val == "false"){
+                            alert("Account does not exist");
+                        }else{
+                            window.location.href = "home.php";
+                        }
+                    }else{
+                        alert("Error");
+                    }
+                }
             }
+
+            req.send("user="+user+"&pass="+pass);
         }
-        </script>
+    </script>
     
 </body>
 </html>
