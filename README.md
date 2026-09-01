@@ -56,8 +56,8 @@ The project was developed and tested locally using **XAMPP, Apache, PHP, MySQL, 
 ### 🔐 Authentication
 
 <p align="center">
-  <img src="screenshot/login.png" width="45%" alt="Login Page">
-  <img src="screenshot/register.png" width="45%" alt="Registration Page">
+  <img src="Screenshot/login.png" width="45%" alt="Login Page">
+  <img src="Screenshot/register.png" width="45%" alt="Registration Page">
 </p>
 
 ### 🎮 Game Categories
