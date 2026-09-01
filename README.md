@@ -56,32 +56,32 @@ The project was developed and tested locally using **XAMPP, Apache, PHP, MySQL, 
 ### 🔐 Authentication
 
 <p align="center">
-  <img src="screenshots/login.png" width="45%" alt="Login Page">
-  <img src="screenshots/register.png" width="45%" alt="Registration Page">
+  <img src="screenshot/login.png" width="45%" alt="Login Page">
+  <img src="screenshot/register.png" width="45%" alt="Registration Page">
 </p>
 
 ### 🎮 Game Categories
 
 <p align="center">
-  <img src="screenshots/category.png" width="60%" alt="Game Category Page">
+  <img src="screenshot/category.png" width="60%" alt="Game Category Page">
 </p>
 
 ### 🛒 Shopping Cart
 
 <p align="center">
-  <img src="screenshots/shopping-cart.png" width="60%" alt="Shopping Cart">
+  <img src="screenshot/shopping-cart.png" width="60%" alt="Shopping Cart">
 </p>
 
 ### 💳 Checkout
 
 <p align="center">
-  <img src="screenshots/checkout.png" width="60%" alt="Checkout Page">
+  <img src="screenshot/checkout.png" width="60%" alt="Checkout Page">
 </p>
 
 ### 📩 Contact Us
 
 <p align="center">
-  <img src="screenshots/contactus.png" width="60%" alt="Contact Us Page">
+  <img src="screenshot/contactus.png" width="60%" alt="Contact Us Page">
 </p>
 
 ---
