@@ -63,25 +63,25 @@ The project was developed and tested locally using **XAMPP, Apache, PHP, MySQL, 
 ### 🎮 Game Categories
 
 <p align="center">
-  <img src="screenshot/category.png" width="60%" alt="Game Category Page">
+  <img src="Screenshot/category.png" width="60%" alt="Game Category Page">
 </p>
 
 ### 🛒 Shopping Cart
 
 <p align="center">
-  <img src="screenshot/shopping-cart.png" width="60%" alt="Shopping Cart">
+  <img src="Screenshot/shopping-cart.png" width="60%" alt="Shopping Cart">
 </p>
 
 ### 💳 Checkout
 
 <p align="center">
-  <img src="screenshot/checkout.png" width="60%" alt="Checkout Page">
+  <img src="Screenshot/checkout.png" width="60%" alt="Checkout Page">
 </p>
 
 ### 📩 Contact Us
 
 <p align="center">
-  <img src="screenshot/contactus.png" width="60%" alt="Contact Us Page">
+  <img src="Screenshot/contactus.png" width="60%" alt="Contact Us Page">
 </p>
 
 ---
