@@ -69,7 +69,7 @@ The project was developed and tested locally using **XAMPP, Apache, PHP, MySQL, 
 ### 🛒 Shopping Cart
 
 <p align="center">
-  <img src="Screenshot/shopping-cart.png" width="60%" alt="Shopping Cart">
+  <img src="Screenshot/shoppingcart.png" width="60%" alt="Shopping Cart">
 </p>
 
 ### 💳 Checkout
